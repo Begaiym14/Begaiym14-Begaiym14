@@ -29,11 +29,72 @@ nav ul li a {
 .example1 {
   display: flex;
   margin-left: 5%;
+  width: 650px;
+  height: 400px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: papayawhip;
+  background-color: rgb(143, 146, 146);
+  font-size: 16px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  color: white;
 }
 .example {
   margin-right: 5%;
   border-radius: 5px;
   float: right;
+}
+main section {
+  display: flex;
+  max-width: 867px;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  padding: 15px 0;
+}
+main section article {
+  flex: 1 1 calc(33.33% - 20px);
+  margin: 0 10px 15px;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+main section article p,
+main section article h3 {
+  margin: 5px 0 0 0;
+}
+.sample-picture {
+  height: 150px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Picture";
+  margin: -15px;
+  margin-bottom: 0;
+}
+.sample-picture:after {
+  display: block;
+  content: "Picture";
+}
+
+@media (max-width: 763px) {
+  nav ul {
+    flex-direction: column;
+  }
+  header h1,
+  header p {
+    width: 80%;
+  }
+  main section article {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 550px) {
+  header h1,
+  header p {
+    width: 100%;
+  }
+  main section article {
+    flex: 1 1 calc(100% - 20px);
+  }
 }
