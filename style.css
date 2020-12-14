@@ -209,3 +209,12 @@ h1 {
 .brownie {
   color: brown;
 }
+.blue {
+  color: teal;
+  text-decoration: underline;
+  font-style: italic;
+}
+.blue brownie {
+  color: yellow;
+  text-decoration: underline;
+}
