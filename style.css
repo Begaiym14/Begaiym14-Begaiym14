@@ -218,3 +218,9 @@ h1 {
   color: yellow;
   text-decoration: underline;
 }
+p {
+  color: purple;
+  background-color: palegoldenrod;
+  font-weight: bold;
+  font-style: italic;
+}
