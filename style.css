@@ -197,3 +197,12 @@ h1 {
   text-decoration: underline;
   font-style: italic;
 }
+#first-paragraph {
+  color: blue;
+}
+#first-paragraph {
+  color: orange;
+}
+#first-paragraph-6 {
+  color: black;
+}
